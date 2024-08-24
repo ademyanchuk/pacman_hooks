@@ -1,0 +1,11 @@
+[Trigger]
+Operation = Remove
+Operation = Install
+Operation = Upgrade
+Type = Package
+Target = *
+
+[Action]
+Description = Saving native package list to dotfiles...
+When = PostTransaction
+Exec = /usr/bin/pacman -Qqen > /home/alex/dotfiles/pckglists/pkglist.txt
