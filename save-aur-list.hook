@@ -8,4 +8,4 @@ Target = *
 [Action]
 Description = Saving aur package list to dotfiles...
 When = PostTransaction
-Exec = /usr/bin/pacman -Qqem > /home/alex/dotfiles/pckglists/foreignpkglist.txt
+Exec = /bin/sh -c '/usr/bin/pacman -Qqem > /home/alex/dotfiles/pckglists/foreignpkglist.txt'

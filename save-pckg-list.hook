@@ -8,4 +8,4 @@ Target = *
 [Action]
 Description = Saving native package list to dotfiles...
 When = PostTransaction
-Exec = /usr/bin/pacman -Qqen > /home/alex/dotfiles/pckglists/pkglist.txt
+Exec = /bin/sh -c '/usr/bin/pacman -Qqen > /home/alex/dotfiles/pckglists/pkglist.txt'
